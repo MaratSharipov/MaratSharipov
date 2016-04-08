@@ -16,7 +16,7 @@ public class Main {
             for(int i=0;i<100;i++){
                 in.writeInt(random.nextInt(1000)+1);
             }
-            in.close();
+            
 
         }
         catch (IOException e){
@@ -33,12 +33,12 @@ public class Main {
                         count++;
                     }
                 }
-                out.close();
+                
             }
             catch (IOException e){
                 e.getStackTrace();
             }
-            in.close();
+            
         }
         catch (IOException e){
             e.getStackTrace();
@@ -50,7 +50,7 @@ public class Main {
             for(int i=0;i<count;i++){
                 System.out.println(in.readInt());
             }
-            in.close();
+            
         }
         catch (IOException e){
             e.getStackTrace();
